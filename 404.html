@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0WZ2J1E6E8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-0WZ2J1E6E8');
+    </script>
+    <head>
+        <meta charset="UTF-8">
+        <title>Page Not Found</title>
+        <meta name="robots" content="noindex">
+                
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+        <link href="assets/css/styles.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <nav id="navbar" class="flex justify-around items-center p-5 fixed top-0 left-0 w-full z-50">
+            <a href="index.html">
+                <img src="assets/img/logo.png" alt="ApexNet Logo"/>
+            </a>
+            <div class="flex gap-5">
+                <div class="flex gap-5">
+                    <div id="navbar-links" class="navbar flex justify-between items-center gap-10">
+                        <a href="services.html">Our Services</a>
+                        <a ref="#work">Our Work</a>
+                    </div>
+                </div>
+                <button class="hover:bg-sky-500 m-2 p-2 px-4 bg-sky-600" onclick=goToContactPage()>Contact</button>
+            </div>
+        </nav>
+        <section class="thanks flex justify-center items-center flex-col pt-60">
+            <h1 class="text-4xl border-l-4 border-sky-600 px-5">Oops! Page Not Found!</h1>
+            <button class="text-2xl pt-5 mb-40 underline decoration-sky-600 decoration-2 underline-offset-3" onclick=goToHomePage()>
+                Home &rarr;
+            </button>
+        </section>
+        <footer class="flex justify-between items-center mt-10 p-10 text-white">
+            <div>
+                <span>© 2025 TrueBuild Websites. Built Right. Built True.</br>A division of ApexNet.</br>ABN 56 703 863 104</span>
+            </div>
+            <div class="flex justify-center items-center bg-white p-5 w-60">
+                <a href="index.html"><img src="assets/img/logo.png"></a>
+            </div>
+            <div class="flex justify-center items-center gap-5">
+                <div>
+                    <a href="index.html">Home</a> |
+                    <a href="services.html">Our Services</a> |
+                    <a href="#work">Our Work</a> |
+                    <a href="contact.html">Contact</a> |
+                    <a href="https://instagram.com/apexnet.au" title="Instagram" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="assets/js/script.js"></script>
+</html>

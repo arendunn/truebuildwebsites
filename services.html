@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0WZ2J1E6E8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-0WZ2J1E6E8');
+    </script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>TrueBuild Websites | Services</title>
+        <meta name="title" content="ApexNet | Web Development & Digital Solutions"/>
+        <meta name="description" content="ApexNet delivers powerful website development and various other digital solutions. Based in Sydney, we are here to innovate the digital future"/>
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+        <link href="assets/css/styles.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <script src="assets/js/script.js"></script>
+    <body>
+        <nav id="navbar" class="flex justify-around items-center p-5 fixed top-0 left-0 w-full z-50">
+            <a href="index.html">
+                <img src="assets/img/logo.png" alt="ApexNet Logo"/>
+            </a>
+            <div class="flex gap-5">
+                <div class="flex gap-5">
+                    <div id="navbar-links" class="navbar flex justify-between items-center gap-10">
+                        <a href="services.html">Our Services</a>
+                        <a ref="#work">Our Work</a>
+                    </div>
+                </div>
+                <button class="hover:bg-sky-500 m-2 p-2 px-4 bg-sky-600" onclick=goToContactPage()>Contact</button>
+            </div>
+        </nav>
+        <section class="hero-alt flex justify-center items-center flex-col pt-40">
+            <h1 class="fade-in text-5xl border-l-4 border-sky-600 px-5">Our Services</h1>
+        </section>
+        <section id="services" class="fade-in flex justify-center items-center flex-col pt-20">
+            <div class="flex flex-col justify-center items-center pt-10 btn">
+                <button class="text-2xl pt-5 underline decoration-sky-600 decoration-2 underline-offset-3" onclick=goToContactPage()>
+                    Interested? Contact Us for a Free Quote! &rarr;
+                </button>
+            </div>
+            <span class="flex items-center gap-7 pt-20 pb-10 px-10">
+                    <img class="h-25" src="assets/img/websiteicon.png"/>
+                    <h1 class="text-3xl">Website Packages</h1>
+            </span>
+            <table class="w-2/3" id="website-development">
+                <tr>
+                    <td>
+                        Tier
+                    </td>
+                    <td class="px-10">
+                        What's Included
+                    </td>
+                    <td class="text-right">Price (AUD)</td>
+                </tr>
+                <tr>
+                    <th>Business</th>
+                    <td class="px-10">1-3 Pages, Responsive Design, Custom Styling, Contact Form, Basic SEO</td>
+                    <td class="text-right">From $599</td>
+                </tr>
+                <tr>
+                    <th>Standard</th>
+                    <td class="px-10">4-6 Pages, Mobile-First Design, Google Maps, Testimonials, Image Gallery, SEO Tags</td>
+                    <td class="text-right">From $999</td>
+                </tr>
+                <tr>
+                    <th>Pro</th>
+                    <td class="px-10"> 6-8 Pages, CTA Focused Layout, Social Media Embedding, Analytics Setup, Advanced Integrations</td>
+                    <td class="text-right">From $1599</td>
+                </tr>
+            </table>
+            <span class="flex items-center gap-7 pt-20 pb-10 px-10">
+                    <img class="h-25" src="assets/img/landingicon.png"/>
+                    <h1 class="text-3xl">Landing Page Packages</h1>
+            </span>
+            <table class="w-2/3">
+                <tr>
+                    <td>
+                        Tier
+                    </td>
+                    <td class="px-10">
+                        What's Included
+                    </td>
+                    <td class="text-right">
+                        Price (AUD)
+                    </td>
+                </tr>
+                <tr>
+                    <th>Basic<br/>Landing Page</th>
+                    <td class="px-10">Single Page Promo Site, Responsive Design, CTA Button, Contact Form</td>
+                    <td class="text-right">From $399</td>
+                </tr>
+                <tr>
+                    <th>Advanced<br/>Landing Page</th>
+                    <td class="px-10">Tracking, Analytics, Countdown Timer, Sign up Form, Booking Feature</td>
+                    <td class="text-right">From $999</td>
+                </tr>
+            </table>
+            <span class="flex items-center gap-10 pt-20 pb-10 px-10">
+                    <img class="h-15" src="assets/img/addonicon.png"/>
+                    <h1 class="text-3xl">Optional Add-Ons</h1>
+            </span>
+            <table class="w-2/3">
+                <tr>
+                    <td>
+                        Tier
+                    </td>
+                    <td class="text-right">
+                        Price (AUD)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Domain + Email Setup</td>
+                    <td class="text-right">$75 - $150</td>
+                </tr>
+                <tr>
+                    <td>Google Analytics + Conversion Setup</td>
+                    <td class="text-right">$100 - $150</td>
+                </tr>
+                <tr>
+                    <td>Google Business Profile Setup</td>
+                    <td class="text-right">$100 - $150</td>
+                </tr>
+                <!--
+                <tr>
+                    <td>Blog Setup</td>
+                    <td class="text-right">$250 - $300</td>
+                </tr>
+                <tr>
+                    <td>SEO Optimisation</td>
+                    <td class="text-right">$250+</td>
+                </tr>
+                <tr>
+                    <td>Integrated Booking or Inquiry System</td>
+                    <td class="text-right">$100+</td>
+                </tr>
+                -->
+                <tr>
+                    <td>Additional Page</td>
+                    <td class="text-right">$150 - $250</td>
+                </tr>
+                <tr>
+                    <td>Page Redesign</td>
+                    <td class="text-right">From $200</td>
+                </tr>
+                <tr>
+                    <td>Feature Integration</td>
+                    <td class="text-right">$150 - $300</td>
+                </tr>
+                <tr>
+                    <td>Full Style Revamp</td>
+                    <td class="text-right">$400 - $800</td>
+                </tr>
+                <tr>
+                    <td>Hourly Rate for Custom Work</td>
+                    <td class="text-right">$60 - $120/hr</td>
+                </tr>
+            </table>
+            <span class="flex items-center gap-10 pt-20 pb-10">
+                    <img class="h-25" src="assets/img/maintenanceicon.png"/>
+                    <h1 class="text-3xl">Maintenance Plans</h1>
+            </span>
+            <table class="w-2/3">
+                <tr>
+                    <td>
+                        Plan
+                    </td>
+                    <td>
+                        Features
+                    </td>
+                    <td class="text-right">
+                        Price (AUD)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Basic</td>
+                    <td>
+                        <ul>
+                            <li>Hosting, Domain, Uptime Monitoring</li>
+                            <li>1-2 Content Changes per Month</li>
+                        </ul>
+                    </td>
+                    <td class="text-right">From $49/month</td>
+                </tr>
+                <tr>
+                    <td>Standard</td>
+                    <td>
+                        <ul>
+                            <li>
+                                Hosting, Domain, Uptime Monitoring, Google Analytics<br/>
+                                Reports
+                            </li>
+                            <li>3-4 Content Changes per Month</li>
+                        </ul>
+                    </td>
+                    <td class="text-right">From $99/month</td>
+                </tr>
+                <tr>
+                    <td>Professional</td>
+                    <td>
+                        <ul>
+                            <li>
+                                Hosting, Domain, Uptime Monitoring, Google Analytics<br/>
+                                Reports, Text Updates, Image Updates
+                            </li>
+                            <li>5-6 Content Changes per Month</li>
+                        </ul>
+                    </td>
+                    <td class="text-right">From $149/month</td>
+                </tr>
+            </table>
+            <div class="flex flex-col justify-center items-center pt-10 btn">
+                <button class="text-2xl pt-5 underline decoration-sky-600 decoration-2 underline-offset-3" onclick=goToContactPage()>
+                    Click here for a Free Quote! &rarr;
+                </button>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-1 pt-20 px-10">
+                <h2 class="sub">Quotes are specific to each project, please use tiers as a guide.</h2>
+                <h2 class="sub">Clients fully own the website after launch.</h2>
+                <h2 class="sub">Client assumes responsibility if not on a maintence plan.</h2>
+                <h2 class="sub">Alternatively, changes are billed at $60/hr.</h2>
+            </div>
+        </section>
+        <footer class="flex justify-between items-center mt-10 p-10 text-white">
+            <div>
+                <span>© 2025 TrueBuild Websites. Built Right. Built True.</br>A division of ApexNet.</br>ABN 56 703 863 104</span>
+            </div>
+            <div class="flex justify-center items-center bg-white p-5 w-60">
+                <a href="index.html"><img src="assets/img/logo.png"></a>
+            </div>
+            <div class="flex justify-center items-center gap-5">
+                <div>
+                    <a href="index.html">Home</a> |
+                    <a href="services.html">Our Services</a> |
+                    <a href="#work">Our Work</a> |
+                    <a href="contact.html">Contact</a> |
+                    <a href="https://instagram.com/apexnet.au" title="Instagram" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

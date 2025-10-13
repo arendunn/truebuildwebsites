@@ -1,0 +1,269 @@
+/*#0084D1*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body, html {
+    width: 100%;
+    overflow-x: hidden;
+    color: #2f2f2f;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.3s ease-out, transform 1.3s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+nav {
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #a2c2dd;
+    color: #414141;
+    box-shadow: 0 1px 2px #a1a1a1;
+    transition: transform 0.7s;
+}
+
+nav img {
+    width: clamp(150px, 20vw, 250px);
+}
+
+nav #navbar-links, nav button {
+    font-size: clamp(13px, 2vw, 20px);
+}
+
+nav img, nav #navbar-links a, #services a, #contact a {
+    transition: transform ease-in-out 0.1s, color ease-in-out 0.1s;
+}
+
+nav img:hover, nav #navbar-links a:hover, #services a:hover, #contact a:hover {
+    transform: scale(1.03);
+    color: #3A3A3A;
+    cursor: pointer;
+}
+
+.hero {
+    height: 100vh;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+    background: linear-gradient(to bottom, #1A1A1A 0%, #3A3A3A 100%);
+    color: #F5F5F5;
+}
+
+.hero-alt {
+    height: 80vh;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+    background: linear-gradient(to bottom, #1A1A1A 0%, #3A3A3A 100%);
+    color: #F5F5F5;
+}
+
+.hero button, #navbar button {
+    border: 1px solid #a3a3a3;
+    border-radius: 20px;
+    transition: background-color 0.2s ease-in-out;
+    color: #F5F5F5;
+}
+
+.hero button:hover {
+    background-color: #414141;
+}
+
+.about {
+    color: #2f2f2f;
+    font-size: 1.4vw;
+    padding: 150px 20%;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.clients {
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.client-carousel {
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0;
+    background: white;
+    white-space: nowrap;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 10s slide infinite linear;
+}
+
+.logos-slide span {
+    font-size: 50px;
+    padding-left: 50px;
+}
+
+.client-carousel::before,
+.client-carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.client-carousel::before {
+  left: 0;
+  background-image: linear-gradient(to right, #ffffff 0%, transparent 100%);
+}
+
+.client-carousel::after {
+  right: 0;
+  background-image: linear-gradient(to left, #ffffff 0%, transparent 100%);
+}
+
+
+.services, .contact {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.services-item {
+    border-left: #1A1A1A solid 4px;
+    padding: 20px;
+}
+
+.services span, .services li {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.services li {
+    padding-left: 10px;
+}
+
+footer {
+    background: linear-gradient(to bottom, #1A1A1A 0%, #2A2A2A 100%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: smaller;
+    gap: 10px;
+}
+
+footer a:hover {
+    color: #747474;
+    text-decoration: underline;
+}
+
+.home-services {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    width: 80%;
+}
+
+@media screen and (max-width: 767px) {
+    #navbar {
+        padding: 10px;
+    }
+    #navbar-icons {
+        gap: 10px;
+    }
+    .clients {
+        padding-left: 0;
+        padding-right: 0;
+    }  
+    .home-services {
+        flex-direction: column;
+    }
+    td, table {
+        padding: 5px !important;
+        margin: 5px !important;
+    }
+    table {
+        width: 90% !important;
+    }
+    .contact {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .hero h1 {
+        margin-left: 5% !important;
+    }
+    #contact h1 {
+        margin-left: 10% !important;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .home-services {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .about {
+        font-size: larger;
+    }
+}
+
+label {
+    font-size: x-large;
+}
+
+input, .sub {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+
+.thanks {
+    height: 84vh;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+
+/*SERVICES*/
+table {
+    text-align: start;
+    overflow-x: auto;
+}
+
+table th {
+    font-size: 20px;
+    padding: 10px;
+    text-align: start;
+}
+
+table tr:first-of-type {
+    border-bottom: #747474 2px solid;
+}
+
+table tr {
+    border-bottom: #414141 1px solid;
+}
+
+table tr:last-of-type {
+    border: none;
+}
+
+table td {
+    padding: 10px;
+}

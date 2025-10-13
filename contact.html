@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0WZ2J1E6E8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-0WZ2J1E6E8');
+    </script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>TrueBuild Websites | Contact</title>
+        <meta name="title" content="ApexNet | Web Development & Digital Solutions"/>
+        <meta name="description" content="ApexNet delivers powerful website development and various other digital solutions. Based in Sydney, we are here to innovate the digital future"/>
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+        <link href="assets/css/styles.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <script src="assets/js/script.js"></script>
+    <body>
+        <nav id="navbar" class="flex justify-around items-center p-5 fixed top-0 left-0 w-full z-50">
+            <a href="index.html">
+                <img src="assets/img/logo.png" alt="ApexNet Logo"/>
+            </a>
+            <div class="flex gap-5">
+                <div class="flex gap-5">
+                    <div id="navbar-links" class="navbar flex justify-between items-center gap-10">
+                        <a href="services.html">Our Services</a>
+                        <a ref="#work">Our Work</a>
+                    </div>
+                </div>
+                <button class="hover:bg-sky-500 m-2 p-2 px-4 bg-sky-600" onclick=goToContactPage()>Contact</button>
+            </div>
+        </nav>
+        <section class="hero-alt flex justify-center items-center flex-col pt-40">
+            <h1 class="fade-in text-5xl border-l-4 border-sky-600 px-5">Contact</h1>
+        </section>
+        <section class="fade-in contact flex justify-center items-center flex-col pt-40">
+            <h1 class="text-4xl border-l-4 border-sky-600 px-5">Tell us a bit and we'll take it from here!</h1>
+            <form class="py-10" action="https://formspree.io/f/manjnnal" method="POST">
+                <div class="sm:flex justify-between py-10">
+                    <div class="flex flex-col items-center w-80">
+                        <div class="px-10">
+                            <label>Your Name</label>
+                            <input type="text" name="name" 
+                                class="sub mt-1 px-1 w-full border border-sky-600 rounded-md focus:outline-none focus:ring-1"
+                                placeholder="John Smith"
+                                required>
+                        </div>
+                        <div class="px-10 pt-5">
+                            <label>Your Email</label>
+                            <input type="email" name="email" 
+                                class="sub mt-1 px-1 w-full border border-sky-600 rounded-md focus:outline-none focus:ring-1"
+                                placeholder="john.smith@gmail.com"
+                                required>
+                        </div>
+                        <div class="px-10 pt-5">
+                            <label>Your Phone Number</label>
+                            <input type="text" name="phone" 
+                                class="sub mt-1 px-1 w-full border border-sky-600 rounded-md focus:outline-none focus:ring-1"
+                                placeholder="0400 120 130"
+                                required>
+                        </div>
+                    </div>
+                    <div  class="flex flex-col items-center pt-5 sm:pt-0 w-80">
+                        <div class="px-10">
+                            <label>Business Name</label>
+                            <input type="text" name="business-name" 
+                                class="sub mt-1 px-1 w-full border border-sky-600 rounded-md focus:outline-none focus:ring-1"
+                                placeholder="John Smith Electrical">
+                        </div>
+                        <div class="px-10 pt-5">
+                            <label>Business Industry</label>
+                            <input type="text" name="business-industry" 
+                                class="sub mt-1 px-1 w-full border border-sky-600 rounded-md focus:outline-none focus:ring-1"
+                                placeholder="Electrician">
+                        </div>
+                        <div class="px-10 pt-5">
+                            <label>Business Website?</label>
+                            <input type="text" name="business-website" 
+                                class="sub mt-1 px-1 w-full border border-sky-600 rounded-md focus:outline-none focus:ring-1"
+                                placeholder="johnelectrical.com.au">
+                        </div>
+                    </div>
+                </div>
+                <div class="sm:flex">
+                    <div class="px-10 pt-10 sm:w-1/2">
+                        <label>What are you looking for?</label>
+                        <div class="flex flex-col justify-center pb-5">
+                            <label class="sub"><input type="checkbox" name="lookingFor[]" value="Starter Site"> Starter Site</label>
+                            <label class="sub"><input type="checkbox" name="lookingFor[]" value="Standard Site"> Standard Site</label>
+                            <label class="sub"><input type="checkbox" name="lookingFor[]" value="Pro Site"> Pro Site</label>
+                            <label class="sub"><input type="checkbox" name="lookingFor[]" value="Redesign"> Website Redesign</label>
+                            <label class="sub"><input type="checkbox" name="lookingFor[]" value="Maintenance"> Website Maintenance</label>
+                            <label class="sub"><input type="checkbox" name="lookingFor[]" value="Not Sure"> Not Sure</label>
+                            <span class="sub">
+                                <input type="checkbox" name="lookingFor[]" value="Other"> Other:
+                                <input type="text" name="lookingForOther"
+                                    class="mx-1 border-b border-sky-600 focus:outline-none">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="px-10 pt-10 sm:w-1/2">
+                        <label>What best describes your business?</label>
+                        <div class="flex flex-col justify-center">
+                            <label class="sub"><input type="checkbox" name="businessIs[]" value="Just Starting Out"> Just Starting Out</label>
+                            <label class="sub"><input type="checkbox" name="businessIs[]" value="Small Business"> Small Business (1-5 staff)</label>
+                            <label class="sub"><input type="checkbox" name="businessIs[]" value="Larger Business"> Larger Business (5+ staff)</label>
+                            <label class="sub"><input type="checkbox" name="businessIs[]" value="Freelancer"> Freelancer</label>
+                            <label class="sub"><input type="checkbox" name="businessIs[]" value="Personal Brand"> Personal Brand</label>
+                            <span class="sub">
+                                <input type="checkbox" name="businessIs[]" value="Other"> Other:
+                                <input type="text" name="businessIsOther"
+                                    class="mx-1 border-b border-sky-600 focus:outline-none">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col w-100">
+                    <div class="px-10 pt-10 w-100">
+                        <label>What is the goal for your website?</label>
+                        <textarea type="" name="goal" 
+                            class="sub mt-1 p-3 w-full border border-sky-600 rounded-md focus:outline-none focus:ring-1"
+                            placeholder="To gain more clients and increase overall exposure."></textarea>
+                    </div>
+                    <div class="px-10 pt-5 w-100">
+                        <label>Any other comments?</label>
+                        <textarea type="" name="comments" 
+                            class="sub mt-1 p-3 w-full border border-sky-600 rounded-md focus:outline-none focus:ring-1"
+                            placeholder="I am interested in a hosting and maintenance plan."></textarea>
+                    </div>
+                    <div class="pt-5 flex justify-center"> 
+                        <button class="px-3 py-1 border border-sky-600 hover:bg-sky-300 rounded" type="submit" value="Submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <footer class="flex justify-between items-center mt-10 p-10 text-white">
+            <div>
+                <span>© 2025 TrueBuild Websites. Built Right. Built True.</br>A division of ApexNet.</br>ABN 56 703 863 104</span>
+            </div>
+            <div class="flex justify-center items-center bg-white p-5 w-60">
+                <a href="index.html"><img src="assets/img/logo.png"></a>
+            </div>
+            <div class="flex justify-center items-center gap-5">
+                <div>
+                    <a href="index.html">Home</a> |
+                    <a href="services.html">Our Services</a> |
+                    <a href="#work">Our Work</a> |
+                    <a href="contact.html">Contact</a> |
+                    <a href="https://instagram.com/apexnet.au" title="Instagram" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

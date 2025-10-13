@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0WZ2J1E6E8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-0WZ2J1E6E8');
+    </script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>TrueBuild Websites</title>
+        <meta name="title" content="ApexNet | Web Development & Digital Solutions"/>
+        <meta name="description" content="ApexNet delivers powerful website development and various other digital solutions. Based in Sydney, we are here to innovate the digital future"/>
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+        <link href="assets/css/styles.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <nav id="navbar" class="flex justify-around items-center p-5 fixed top-0 left-0 w-full z-50">
+            <a href="index.html">
+                <img src="assets/img/logo.png" alt="ApexNet Logo"/>
+            </a>
+            <div class="flex gap-5">
+                <div class="flex gap-5">
+                    <div id="navbar-links" class="navbar flex justify-between items-center gap-10">
+                        <a href="services.html">Our Services</a>
+                        <a ref="#work">Our Work</a>
+                    </div>
+                </div>
+                <button class="hover:bg-sky-500 m-2 p-2 px-4 bg-sky-600" onclick=goToContactPage()>Contact</button>
+            </div>
+        </nav>
+        <section class="hero flex flex-col justify-center items-center pt-40 px-10">
+            <h1 class="fade-in text-6xl border-l-4 border-sky-600 px-5">Phenomenal Website Solutions.</br>Build Right. Built True.</h1>
+            <h3 class="fade-in text-2xl pt-5">Since 2024. Based in Sydney, Australia.</h3>
+            <div class="fade-in flex justify-center items-center">
+                <button class="m-4 p-2 px-4" onclick=goToServices()>View Services</button>
+                <button class="m-4 p-2 px-4 bg-sky-600" onclick=goToContactPage()>Contact Us</button>
+            </div>
+            <div class="fade-in flex justify-center items-center gap-5">
+                <a href="https://instagram.com/truebuildwebsites" title="Instagram" target="_blank"><img src="assets/img/instagram.png" class="h-7"></a>
+        </section>
+        <section class="fade-in about">
+            <h2 class="text-4xl">
+                <span class="underline decoration-sky-600 decoration-4 underline-offset-8">TrueBuild Websites</span> 
+                is a Sydney-based Web Development Business focused on building clean, modern websites for small 
+                businesses.
+            </h2>
+        </section>
+        <section id="services" class="fade-in flex flex-col justify-center items-center pt-20">
+            <h1 class="text-5xl border-l-4 border-sky-600 px-5">Our Services</h1>
+            <h2 class="text-2xl px-5 pt-5 pb-10">We offer a range of services to help your business thrive online!</h2>
+            <div class="home-services">
+                <a class="flex flex-row gap-5 justify-between items-center my-10 mx-10" href="services.html">
+                    <img class="h-25" src="assets/img/websiteicon.png"/>
+                    <div>
+                        <h1 class="text-3xl text-left">Custom Website Design</h1>
+                        <h2 class="text-left">Custom-built starter, standard, and pro wesbites tailored to your business size and goals.</h2>
+                    </div>
+                </a>
+                <a class="flex flex-row gap-5 justify-between items-center my-10 mx-10" href="services.html">
+                    <img class="h-25" src="assets/img/developmenticon.png"/>
+                    <div>
+                        <h1 class="text-3xl text-left">Responsive Development</h1>
+                        <h2 class="text-left">Clean, fast, and SEO-ready code with smooth performance across all devices.</h2>
+                    </div>
+                </a><a class="flex flex-row gap-5 justify-between items-center my-10 mx-10" href="services.html">
+                    <img class="h-25" src="assets/img/designicon.png"/>
+                    <div>
+                        <h1 class="text-3xl text-left">Figma Mockups & Visual Planning</h1>
+                        <h2 class="text-left">Preview your full site design with professional mockups before development begins.</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="home-services">
+                <a class="flex flex-row gap-5 justify-between items-center my-10 mx-10" href="services.html">
+                    <img class="h-25" src="assets/img/landingicon.png"/>
+                    <div>
+                        <h1 class="text-3xl text-left">Smart Contact & Lead Forms</h1>
+                        <h2 class="text-left">Custom forms with thank-you pages and integrations to help turn visitors into leads.</h2>
+                    </div>
+                </a>
+                <a class="flex flex-row gap-5 justify-between items-center my-10 mx-10" href="services.html">
+                    <img class="h-25" src="assets/img/reporticon.png"/>
+                    <div>
+                        <h1 class="text-3xl text-left">Google Business & Email Setup</h1>
+                        <h2 class="text-left">Get discovered on Google and look professional with @yourdomain email accounts.</h2>
+                    </div>
+                </a><a class="flex flex-row gap-5 justify-between items-center my-10 mx-10" href="services.html">
+                    <img class="h-25" src="assets/img/maintenanceicon.png"/>
+                    <div>
+                        <h1 class="text-3xl text-left">Ongoing Maintenance & Support</h1>
+                        <h2 class="text-left">Optional monthly plans to keep your site updated, secure, and running smoothly.</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="flex justify-center items-center gap-10 btn">
+                <button class="text-2xl pt-5 underline decoration-sky-600 decoration-2 underline-offset-3" onclick=goToServicesPage()>
+                    View All Services &rarr;
+                </button>
+            </div>
+        </section>
+            <!--
+        <section id="work" class="clients pt-20 pb-40">
+            <h1 class="text-2xl">Trusted by many businesses</h1>
+            <div class="client-carousel">
+                <div class="logos-slide">
+                    <span>🚀</span>
+                    <span>💻</span>
+                    <span>📱</span>
+                    <span>🎮</span>
+                    <span>🌐</span>
+                    <span>💡</span>
+                </div>
+                <div class="logos-slide">
+                    <span>🚀</span>
+                    <span>💻</span>
+                    <span>📱</span>
+                    <span>🎮</span>
+                    <span>🌐</span>
+                    <span>💡</span>
+                </div>
+                <div class="logos-slide">
+                    <span>🚀</span>
+                    <span>💻</span>
+                    <span>📱</span>
+                    <span>🎮</span>
+                    <span>🌐</span>
+                    <span>💡</span>
+                </div>
+                <div class="logos-slide">
+                    <span>🚀</span>
+                    <span>💻</span>
+                    <span>📱</span>
+                    <span>🎮</span>
+                    <span>🌐</span>
+                    <span>💡</span>
+                </div>
+            </div>
+        </section>
+            -->
+        <section id="contact" class="fade-in contact flex justify-center items-center flex-col pt-40">
+            <h1 class="text-4xl border-l-4 border-sky-600 px-5">Ready to elevate your business?</h1>
+            <div class="flex justify-center items-center btn">
+                <button class="text-2xl pt-5 mb-40 underline decoration-sky-600 decoration-2 underline-offset-3" onclick=goToContactPage()>
+                    Contact Us! &rarr;
+                </button>
+            </div>
+        </section>
+        <footer class="flex justify-between items-center mt-10 p-10 text-white">
+            <div>
+                <span>© 2025 TrueBuild Websites. Built Right. Built True.</br>A division of ApexNet.</br>ABN 56 703 863 104</span>
+            </div>
+            <div class="flex justify-center items-center bg-white p-5 w-60">
+                <a href="index.html"><img src="assets/img/logo.png"></a>
+            </div>
+            <div class="flex justify-center items-center gap-5">
+                <div>
+                    <a href="index.html">Home</a> |
+                    <a href="services.html">Our Services</a> |
+                    <a href="#work">Our Work</a> |
+                    <a href="contact.html">Contact</a> |
+                    <a href="https://instagram.com/apexnet.au" title="Instagram" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="assets/js/script.js"></script>
+</html>
