@@ -47,9 +47,15 @@ function goToWorkPage() {
 document.addEventListener("DOMContentLoaded", () => {
     let lastScroll = 0;
     const navbar = document.getElementById("navbar");
+    const scrollThreshold = 40;
 
     window.addEventListener("scroll", () => {
         const currentScroll = window.pageYOffset;
+
+        if (currentScroll <= scrollThreshold) {
+            navbar.style.transform = "translateY(0)";
+            return;
+        }
 
         if (currentScroll > lastScroll) {
             navbar.style.transform = "translateY(-100%)"; // Hide
