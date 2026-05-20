@@ -27,92 +27,189 @@
         gtag('config', 'G-0WZ2J1E6E8');
     </script>
     <body>
-        <nav id="navbar" class="flex justify-around items-center p-5 fixed top-0 left-0 w-full z-50">
+        <nav id="navbar" class="flex justify-between items-center p-5 fixed top-0 left-0 w-full z-50">
             <a href="index.html">
                 <img src="assets/img/logo.png" alt="ApexNet Logo"/>
             </a>
             <div class="flex gap-5">
-                <div class="flex gap-5">
-                    <div id="navbar-links" class="navbar flex justify-between items-center gap-10">
-                        <a href="services.html">Our Services</a>
-                    </div>
-                </div>
-                <button class="hover:bg-sky-500 m-2 p-2 px-4 bg-sky-600" onclick=goToContactPage()>Contact</button>
-            </div>
-        </nav>
-        <section class="hero flex flex-col justify-center items-center pt-40 px-10">
-            <h1 class="fade-in border-l-4 border-sky-600 px-5">Phenomenal Web Solutions.</br>Built Right. Built True.</h1>
-            <h3 class="fade-in pt-5">Since 2024. Based in Sydney, Australia.</h3>
-            <div class="fade-in flex justify-center items-center">
-                <button class="m-4 p-2 px-4" onclick=goToServices()>View Services</button>
-                <button class="m-4 p-2 px-4 bg-sky-600" onclick=goToContactPage()>Contact Us</button>
-            </div>
-            <div class="fade-in flex justify-center items-center gap-5">
-                <a href="https://instagram.com/truebuildwebsites" title="Instagram" target="_blank"><img src="assets/img/instagram.png" class="h-7"></a>
-        </section>
-        <section class="fade-in about">
-            <h2 class="text-4xl">
-                <span class="underline decoration-sky-600 decoration-4 underline-offset-8">TrueBuild Websites</span> 
-                is a Sydney-based Web Development Business focused on building clean, modern websites for small 
-                businesses.
-            </h2>
-        </section>
-        <section id="services" class="fade-in flex flex-col justify-center items-center pt-20">
-            <h1 class="text-5xl border-l-4 border-sky-600 px-5">Our Services</h1>
-            <h2 class="text-2xl px-5 pt-5 pb-10">We offer a range of services to help your business thrive online!</h2>
-            <div class="home-services">
-                <a class="flex flex-row gap-5 justify-between items-center my-10 mx-10" href="services.html">
-                    <img class="h-25" src="assets/img/websiteicon.png"/>
-                    <div>
-                        <h1 class="text-3xl text-left">Custom Website Design</h1>
-                        <h2 class="text-left">Custom-built starter, standard, and pro wesbites tailored to your business size and goals.</h2>
-                    </div>
-                </a>
-                <a class="flex flex-row gap-5 justify-between items-center my-10 mx-10" href="services.html">
-                    <img class="h-25" src="assets/img/developmenticon.png"/>
-                    <div>
-                        <h1 class="text-3xl text-left">Responsive Development</h1>
-                        <h2 class="text-left">Clean, fast, and SEO-ready code with smooth performance across all devices.</h2>
-                    </div>
-                </a><a class="flex flex-row gap-5 justify-between items-center my-10 mx-10" href="services.html">
-                    <img class="h-25" src="assets/img/designicon.png"/>
-                    <div>
-                        <h1 class="text-3xl text-left">Figma Mockups & Visual Planning</h1>
-                        <h2 class="text-left">Preview your full site design with professional mockups before development begins.</h2>
-                    </div>
-                </a>
-            </div>
-            <div class="home-services">
-                <a class="flex flex-row gap-5 justify-between items-center my-10 mx-10" href="services.html">
-                    <img class="h-25" src="assets/img/landingicon.png"/>
-                    <div>
-                        <h1 class="text-3xl text-left">Smart Contact & Lead Forms</h1>
-                        <h2 class="text-left">Custom forms with thank-you pages and integrations to help turn visitors into leads.</h2>
-                    </div>
-                </a>
-                <a class="flex flex-row gap-5 justify-between items-center my-10 mx-10" href="services.html">
-                    <img class="h-25" src="assets/img/reporticon.png"/>
-                    <div>
-                        <h1 class="text-3xl text-left">Google Business & Email Setup</h1>
-                        <h2 class="text-left">Get discovered on Google and look professional with @yourdomain email accounts.</h2>
-                    </div>
-                </a><a class="flex flex-row gap-5 justify-between items-center my-10 mx-10" href="services.html">
-                    <img class="h-25" src="assets/img/maintenanceicon.png"/>
-                    <div>
-                        <h1 class="text-3xl text-left">Ongoing Maintenance & Support</h1>
-                        <h2 class="text-left">Optional monthly plans to keep your site updated, secure, and running smoothly.</h2>
-                    </div>
-                </a>
-            </div>
-            <div class="flex justify-center items-center gap-10 btn">
-                <button class="text-2xl pt-5 underline decoration-sky-600 decoration-2 underline-offset-3" onclick=goToServicesPage()>
-                    View All Services &rarr;
+                <button class="hover:bg-sky-500 m-2 p-2 px-4 bg-sky-600" onclick=goToContactPage()>
+                    <p class="sm:text-xl text-4lg">Get Started</p>
                 </button>
             </div>
+        </nav>
+        <section class="hero flex flex-col justify-center px-10 pt-40">
+            <div class="fade-in">
+                <h1 class="border-l-4 border-sky-600 px-5 text-10xl">SIMPLE WEBSITES FOR SMALL BUSINESSES</h1>
+                <h3 class="pt-14">Fast, modern websites designed to help local businesses turn visitors into customers.</h3>
+                <div class="pt-14 fade-in flex  justify-center items-center gap-2">
+                    <a id="btn" class="m-2 p-2 px-4" href="#contact">
+                        <p class="sm:text-2xl text-xl">Get a Website &#x27F6;</p>
+                    </a>
+                    <a id="btn" class="m-2 p-2 px-4" href="#contact">
+                        <p class="sm:text-2xl text-xl">View Examples &#x27F6;</p>
+                    </a>
+                </div>
+            </div>
         </section>
-            <!--
+        <section>
+            <div>
+                <a class="flex flex-col gap-2 justify-between mt-20 mb-10 sm:mx-[20%] mx-[10%]">
+                    <h1 class="sm:text-5xl text-3xl border-l-4 border-sky-600 px-5 mb-10">Most small business websites are losing them customers</h1>
+                    <div class="fade-in flex flex-col text-center">
+                        <h2 class="sm:text-3xl text-2xl">They look outdated</h2>
+                    </div>
+                    <div class="fade-in flex flex-col text-center">
+                        <h2 class="sm:text-3xl text-2xl">They don't generate leads</h2>
+                    </div>
+                    <div class="fade-in flex flex-col text-center">
+                        <h2 class="sm:text-3xl text-2xl">They miss leads from forms</h2>
+                    </div>
+                    <div class="fade-in flex flex-col text-center">
+                        <h2 class="sm:text-3xl text-2xl">They have no follow-up system</h2>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="bg-gradient-to-b from-white to-slate-500 py-10">
+            <div class="max-w-5xl mx-auto px-4">
+                <div class="fade-in bg-white rounded-2xl shadow-sm border border-slate-200 p-8 text-center">
+                    <h2 class="sm:text-4xl text-3xl font-semibold text-slate-900 mb-6">
+                        We fix this by building systems that actually bring you customers.
+                    </h2>
+                    <div class="grid md:grid-cols-2 content-center">
+                        <a class="flex flex-row gap-4 sm:px-[10%] items-center my-2 mx-2" href="services.html">
+                            <img class="sm:h-25 h-8" src="assets/img/websiteicon.png"/>
+                            <div>
+                                <h1 class="sm:text-3xl text-l text-left">Websites That Convert</h1>
+                                <h2 class="sm:text-xl text-xs text-left text-slate-600">Built to turn visitors into real enquiries</h2>
+                            </div>
+                        </a>
+                        <a class="flex flex-row gap-4 sm:px-[10%] items-center my-2 mx-2" href="services.html">
+                            <img class="sm:h-25 h-8" src="assets/img/developmenticon.png"/>
+                            <div>
+                                <h1 class="sm:text-3xl text-l text-left">Mobile-First Design</h1>
+                                <h2 class="sm:text-xl text-xs text-left text-slate-600">Looks perfect on every device</h2>
+                            </div>
+                        </a>
+                        <a class="flex flex-row gap-4 sm:px-[10%] items-center my-2 mx-2" href="services.html">
+                            <img class="sm:h-25 h-8" src="assets/img/designicon.png"/>
+                            <div>
+                                <h1 class="sm:text-3xl text-l text-left">Moden Design Mockups</h1>
+                                <h2 class="sm:text-xl text-xs text-left text-slate-600">Clean, professional layouts before we build</h2>
+                            </div>
+                        </a>
+                        <a class="flex flex-row gap-4 sm:px-[10%] items-center my-2 mx-2" href="services.html">
+                            <img class="sm:h-25 h-8" src="assets/img/landingicon.png"/>
+                            <div>
+                                <h1 class="sm:text-3xl text-l text-left">Lead Capture System</h1>
+                                <h2 class="sm:text-xl text-xs text-left text-slate-600">Smart forms that stop you losing enquiries</h2>
+                            </div>
+                        </a>
+                        <a class="flex flex-row gap-4 sm:px-[10%] items-center my-2 mx-2" href="services.html">
+                            <img class="sm:h-25 h-8" src="assets/img/reporticon.png"/>
+                            <div>
+                                <h1 class="sm:text-3xl text-l text-left">Google Business Setup</h1>
+                                <h2 class="sm:text-xl text-xs text-left text-slate-600">Help customers find you locally</h2>
+                            </div>
+                        </a>
+                        <a class="flex flex-row gap-4 sm:px-[10%] items-center my-2 mx-2" href="services.html">
+                            <img class="sm:h-25 h-8" src="assets/img/maintenanceicon.png"/>
+                            <div>
+                                <h1 class="sm:text-3xl text-l text-left">Ongoing Website Care</h1>
+                                <h2 class="sm:text-xl text-xs text-left text-slate-600">Optional monthly updates, fixes, and support.</h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="packages" class="-mt-px bg-slate-500 py-12">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-5xl text-center font-semibold text-slate-100 mb-12">
+                    Website Packages
+                </h2>
+            </div>
+            <div class="grid sm:grid-cols-3 px-6 md:px-[10%] gap-8 px-6">
+                <!-- Starter -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border justify-between">
+                    <div>
+                        <h3 class="text-3xl font-semibold mb-4">Starter</h3>
+                        <p class="text-slate-600 mb-6">
+                            Perfect for new businesses.
+                        </p>
+                        <p class="text-slate-600">
+                            From
+                        </p>
+                        <p class="text-5xl font-bold mb-6">$599</p>
+                        <ul class="space-y-3 mb-16">
+                            <li>✓ 1-page Website</li>
+                            <li>✓ Mobile Responsive</li>
+                            <li>✓ Contact Form</li>
+                            <li>✓ Basic SEO</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="bg-sky-400 px-5 py-3 rounded-xl" href="#contact">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+                <!-- Standard -->
+                <div class="bg-sky-600 text-white rounded-2xl p-6 shadow-lg scale-105 justify-between">
+                    <div>
+                        <p class="uppercase tracking-widest mb-2">
+                            Most Popular
+                        </p>
+                        <h3 class="text-3xl font-semibold mb-4">Buiness</h3>
+                        <p class="mb-6">
+                            Best for growing businesses.
+                        </p>
+                        <p>
+                            From
+                        </p>
+                        <p class="text-5xl font-bold mb-6">$899</p>
+                        <ul class="space-y-3 mb-14">
+                            <li>✓ 1-3 pages</li>
+                            <li>✓ Improved layout and flow</li>
+                            <li>✓ More detailed sections</li>
+                            <li>✓ SEO Optimization</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="bg-white text-sky-700 px-5 py-3 rounded-xl" href="#contact">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+                <!-- Pro -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border justify-between">
+                    <div>
+                        <h3 class="text-3xl font-semibold mb-4">Pro</h3>
+                        <p class="text-slate-600 mb-6">
+                            Full business growth system.
+                        </p>
+                        <p class="text-slate-600">
+                            From
+                        </p>
+                        <p class="text-5xl font-bold mb-6">$1299</p>
+                        <ul class="space-y-3 mb-16">
+                            <li>✓ Up to 5 pages</li>
+                            <li>✓ Stronger layout</li>
+                            <li>✓ Structured content</li>
+                            <li>✓ Built for engagement</li>
+                        </ul>
+                    </div>
+                    <div>
+                    <a class="bg-sky-400 px-5 py-3 rounded-xl" href="#contact">
+                        Get Started
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--
         <section id="work" class="clients pt-20 pb-40">
-            <h1 class="text-2xl">Trusted by many businesses</h1>
+            <h1 class="text-5xl font-semibold mb-12">Trusted by many businesses</h1>
             <div class="client-carousel">
                 <div class="logos-slide">
                     <span>🚀</span>
@@ -148,36 +245,151 @@
                 </div>
             </div>
         </section>
-            -->
-        <section id="contact" class="fade-in contact flex justify-center items-center flex-col pt-40">
-            <h1 class="text-4xl border-l-4 border-sky-600 px-5">Ready to elevate your business?</h1>
+    -->
+        <section class="pt-16 pb-8 bg-slate-100">
+            <div class="max-w-5xl mx-auto px-4 text-center">
+                <h2 class="text-5xl font-semibold mb-12">
+                    How it works
+                </h2>
+                <div class="grid sm:grid-cols-3 gap-10">
+                    <div>
+                        <div class="text-6xl font-bold text-sky-600 mb-4">1</div>
+                        <h3 class="text-2xl mb-3">Audit & Strategy</h3>
+                        <p class="text-slate-600">
+                            We identify what your business needs to attract and capture more customers online.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="text-6xl font-bold text-sky-600 mb-4">2</div>
+                        <h3 class="text-2xl mb-3">Design & Build</h3>
+                        <p class="text-slate-600">
+                            We create a fast, modern website designed to build trust and generate enquiries.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="text-6xl font-bold text-sky-600 mb-4">3</div>
+                        <h3 class="text-2xl mb-3">Launch & Grow</h3>
+                        <p class="text-slate-600">
+                            Your website goes live, custom built to start converting more visitors.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-14 bg-slate-100">
+            <div class="max-w-5xl mx-auto px-4 text-center">
+                <h2 class="text-5xl font-semibold mb-12">
+                    Who we help
+                </h2>
+                <div class="grid sm:grid-cols-2 gap-10">
+                    <div>
+                        <div class="text-6xl font-bold text-sky-600 mb-4 flex justify-center">
+                            <img src="assets/img/new-business.png">
+                        </div>
+                        <h3 class="text-2xl mb-3">Existing Businesses</h3>
+                        <p class="text-slate-600">⮞ Outdated website?</p>
+                        <p class="text-slate-600">⮞ Not getting valid enquiries?</p>
+                        <p class="text-slate-600">⮞ Losing valuable leads?</p>
+                    </div>
+                    <div>
+                        <div class="text-6xl font-bold text-sky-600 mb-4 flex justify-center">
+                            <img src="assets/img/existing-business.png">
+                        </div>
+                        <h3 class="text-2xl mb-3">New Businesses</h3>
+                        <p class="text-slate-600">⮞ Need a professional launch?</p>
+                        <p class="text-slate-600">⮞ Google Business setup needed?</p>
+                        <p class="text-slate-600">⮞ Want help with setting up a website?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-14 bg-white">
+            <div class="max-w-5xl mx-auto px-4 text-center">
+                <h3 class="text-xl font-semibold text-slate-600">SYSTEMS THAT SUPPORT GROWTH</h3>
+                <h2 class="text-5xl font-semibold mb-12">More than just a website</h2>
+                <h3 class="text-2xl mb-3">Websites are only the starting point. We build systems that help businesses attract, capture, and manage more leads.</h3>
+                <h3 class="text-2xl mb-12">That's why we build complete customer-focused systems, not just pages.</h3>
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div class="bg-white rounded-2xl p-6 shadow-sm border flex flex-col items-center">
+                        <h3 class="text-xl">Lead Capture</h3>
+                        <h4>Smart forms and enquiry systems designed to stop you losing customers.</h4>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 shadow-sm border flex flex-col items-center">
+                        <h3 class="text-xl">Google Setup</h3>
+                        <h4>Google Business Profile setup to help customers find and trust your business.</h4>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 shadow-sm border flex flex-col items-center">
+                        <h3 class="text-xl">Review Systems</h3>
+                        <h4>Simple review flos that help business build credibility online.</h4>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 shadow-sm border flex flex-col items-center">
+                        <h3 class="text-xl">SEO Structure</h3>
+                        <h4>Search-friendly page structure designed to improve visibility on Google.</h4>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 shadow-sm border flex flex-col items-center">
+                        <h3 class="text-xl">Follow-Up Systems</h3>
+                        <h4>Systems that help businesses respond faster and keep track of enquiries.</h4>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 shadow-sm border flex flex-col items-center">
+                        <h3 class="text-xl">Ongoing Support</h3>
+                        <h4>Ongoing updates, fixes, and support avaliable.</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--ADD EXAMPLES SECTION-->
+        <section id="contact" class="contact flex justify-center items-center flex-col pt-20">
+            <div class="max-w-5xl mx-auto px-4 text-center pb-8">
+                <h3 class="text-xl font-semibold text-slate-600">FIX YOUR ONLINE PRESENCE</h3>
+                <h2 class="text-5xl font-semibold">Have a website or need one?</h2>
+                <h1 class="text-5xl">Get a free website audit!</h1>
+            </div>
             <div class="flex justify-center items-center btn">
                 <button class="text-2xl pt-5 mb-40 underline decoration-sky-600 decoration-2 underline-offset-3" onclick=goToContactPage()>
-                    Contact Us! &rarr;
+                    Contact us now! &rarr;
                 </button>
             </div>
         </section>
-        <footer class="flex justify-between items-center mt-10 p-10 text-white">
-            <div class="flex-col justify-center items-center gap-5">
-                <div class="flex justify-center gap-1">
-                    <a href="index.html">Home</a> |
-                    <a href="services.html">Our Services</a> |
-                    <a href="#work">Our Work</a> |
-                    <a href="contact.html">Contact</a> |
-                    <a href="https://instagram.com/apexnet.au" title="Instagram" target="_blank">Instagram</a>
+        <footer class="mt-10 p-10 text-white bg-slate-800">
+            <div class="grid md:text-center md:grid-cols-3 gap-5">
+                <div class="flex md:flex-col md:items-center">
+                    <div class="bg-white p-5 w-60 mb-5">
+                        <a href="index.html"><img src="assets/img/logo.png"></a>
+                    </div>
                 </div>
                 <div>
-                    <a href="termsandconditions.html">Terms & Conditions</a>
+                    <div class="flex flex-col">
+                        <a href="index.html" class="pb-2">Home</a>
+                        <a href="services.html">Services</a>
+                    <!--
+                        <a href="#">➤ Website Design</a>
+                        <a href="#">➤ Website Maintenance</a>
+                        <a href="#" class="pb-2">➤ Business Tools</a>
+                        <a href="#work">Industries</a>
+                        <a href="#">➤ Websites for Electricians</a>
+                        <a href="#">➤ Websites for Plumbers</a>
+                        <a href="#">➤ Websites for Builders</a>
+                        <a href="#">➤ Websites for Tradies</a>
+                        <a href="#" class="pb-2">➤ Websites for Landscapers</a>
+                        <a href="#">Locations</a>
+                        <a href="#">➤ Sydney Web Design and Development</a>
+                        <a href="#">➤ South West Sydney Website Design and Development</a>
+                        <a href="#" class="pb-2">➤ Western Sydney Website Design and Development</a>
+                    -->
+                        <a href="contact.html">Contact</a>
+                        <a href="https://instagram.com/truebuildwebsites" title="Instagram" target="_blank">Instagram</a>
+                        <a href="https://www.facebook.com/share/1DvaCMhRNg/?mibextid=wwXIfr" title="Instagram" target="_blank">Facebook</a>
+                    </div>
                 </div>
                 <div>
-                    <a href="privacypolicy.html">Privacy Policy</a>
+                    <div>
+                        <a href="terms.html">Terms & Conditions</a>
+                    </div>
+                    <div>
+                        <a href="privacy.html">Privacy Policy</a>
+                    </div>
+                    <span>© 2025 TrueBuild Websites. Built Right. Built True.</br>A division of ApexNet.</br>ABN 56 703 863 104</span>
                 </div>
-            </div>
-            <div class="flex justify-center items-center bg-white p-5 w-60">
-                <a href="index.html"><img src="assets/img/logo.png"></a>
-            </div>
-            <div class="abn-footer">
-                <span>© 2025 TrueBuild Websites. Built Right. Built True.</br>A division of ApexNet.</br>ABN 56 703 863 104</span>
             </div>
         </footer>
     </body>
