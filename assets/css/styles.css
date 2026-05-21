@@ -10,8 +10,16 @@ body, html {
     width: 100%;
     overflow-x: hidden;
     color: #2f2f2f;
-    font-family: 'Franklin Gothic Medium', 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+#problem h2 {
+    font-weight: 500;
 }
 
 .fade-in {
