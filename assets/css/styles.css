@@ -4,13 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body, html {
     width: 100%;
     overflow-x: hidden;
     color: #2f2f2f;
+    font-family: 'Franklin Gothic Medium', 'Inter', sans-serif;
+    font-weight: 400;
 }
 
 .fade-in {
